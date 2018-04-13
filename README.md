@@ -1,5 +1,10 @@
 # elegant-date
 
+## Install
+
+```bash
+npm i elegant-date
+```
 
 ## Contributing
 
