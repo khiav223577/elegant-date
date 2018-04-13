@@ -6,6 +6,43 @@
 npm i elegant-date
 ```
 
+## Usage
+
+### Wrap the date object first
+```js
+import elegantDate from 'elegant-date'
+
+// wrap the date object
+var now = elegantDate(new Date()) 
+now.date
+// => Fri Apr 13 2018 18:54:32
+```
+
+### Add days
+```js
+now.yesterday.date
+// => Fri Apr 12 2018 18:54:32
+now.tomorrow.date
+// => Fri Apr 14 2018 18:54:32
+now.daysNext(3).date
+// => Fri Apr 16 2018 18:54:32
+```
+
+### Go to the beginning or the end of month
+```js
+now.beginningOfMonth.date
+// => Fri Apr 01 2018 00:00:00
+now.endOfMonth.date
+// => Fri Apr 30 2018 00:00:00
+```
+
+### Support chaining
+```js
+now.beginningOfMonth.tomorrow.date
+// => Fri Apr 02 2018 00:00:00
+```
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/khiav223577/elegant-date. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
