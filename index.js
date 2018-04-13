@@ -11,3 +11,5 @@ function ElegantDate(date){
     },
   }
 }
+
+module.exports = ElegantDate;
