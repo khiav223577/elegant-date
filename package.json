@@ -12,7 +12,9 @@
   },
   "keywords": [
     "date",
-    "utils"
+    "utils",
+    "date-utils",
+    "time"
   ],
   "author": "khiav223577",
   "license": "MIT",
