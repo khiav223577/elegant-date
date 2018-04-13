@@ -1,0 +1,23 @@
+{
+  "name": "elegant-date",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khiav223577/elegant-date.git"
+  },
+  "keywords": [
+    "date",
+    "utils"
+  ],
+  "author": "khiav223577",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khiav223577/elegant-date/issues"
+  },
+  "homepage": "https://github.com/khiav223577/elegant-date#readme"
+}
