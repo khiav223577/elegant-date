@@ -6,7 +6,7 @@ function ElegantDate(date){
       return ElegantDate(firstDay);
     },
     get endOfMonth(){
-      var lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+      var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
       return ElegantDate(lastDay);
     },
   }
