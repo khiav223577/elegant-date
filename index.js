@@ -3,11 +3,11 @@ function ElegantDate(date){
     get date(){ return date; },
     get beginningOfMonth(){
       var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
-      return elegantDate(firstDay);
+      return ElegantDate(firstDay);
     },
     get endOfMonth(){
       var lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0);
-      return elegantDate(lastDay);
+      return ElegantDate(lastDay);
     },
   }
 }
