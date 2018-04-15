@@ -1,3 +1,5 @@
+var strftime = require('strftime');
+
 function ElegantDate(date){
   if (date == null) date = new Date();
 
@@ -21,6 +23,7 @@ function ElegantDate(date){
 
   return {
     get date(){ return date; },
+    strftime: function(format){ return strftime(format, date); },
     daysAgo: function(val){ return daysNext(-val); },
     daysNext: daysNext,
     get yesterday(){ return daysNext(-1); },

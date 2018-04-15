@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/khiav223577/elegant-date/issues"
   },
-  "homepage": "https://github.com/khiav223577/elegant-date#readme"
+  "homepage": "https://github.com/khiav223577/elegant-date#readme",
+  "dependencies": {
+    "strftime": "^0.10.0"
+  }
 }
