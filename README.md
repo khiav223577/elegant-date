@@ -28,6 +28,24 @@ now.daysNext(3).date
 // => Fri Apr 16 2018 18:54:32
 ```
 
+### Add months
+```js
+now.monthsAgo(3).date
+// => Fri Jan 13 2018 18:54:32
+
+now.monthsNext(3).date
+// => Fri Jul 13 2018 18:54:32
+```
+
+### Add years
+```js
+now.yearsAgo(3).date
+// => Fri Apr 13 2015 18:54:32
+
+now.yearsNext(3).date
+// => Fri Apr 13 2021 18:54:32
+```
+
 ### Go to the beginning or the end of month
 ```js
 now.beginningOfMonth.date
