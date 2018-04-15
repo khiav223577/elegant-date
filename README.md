@@ -66,6 +66,14 @@ now.beginningOfMonth.tomorrow.date
 // => Fri Apr 02 2018 00:00:00
 ```
 
+### Formatting String
+```js
+now.strftime("%F %T")
+// => 2018-04-13 18:54:32
+
+now.strftime("%B %d, %Y %H:%M:%S")
+// => April 13, 2018 18:54:32
+```
 
 ## Contributing
 
