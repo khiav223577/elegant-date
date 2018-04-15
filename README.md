@@ -29,6 +29,9 @@ now.yesterday.date
 now.tomorrow.date
 // => Fri Apr 14 2018 18:54:32
 
+now.daysAgo(3).date
+// => Fri Apr 10 2018 18:54:32
+
 now.daysNext(3).date
 // => Fri Apr 16 2018 18:54:32
 ```
