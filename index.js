@@ -1,4 +1,5 @@
 function ElegantDate(date){
+  if (date == null) date = new Date();
 
   function daysNext(val){
     var newDate = new Date(date.getTime());
@@ -20,6 +21,10 @@ function ElegantDate(date){
 
   return {
     get date(){ return date; },
+    daysAgo: function(val){ return daysNext(-val); },
+    daysNext: daysNext,
+    get yesterday(){ return daysNext(-1); },
+    get tomorrow(){ return daysNext(1); },
     get beginningOfMonth(){
       var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
       return ElegantDate(firstDay);
@@ -28,14 +33,10 @@ function ElegantDate(date){
       var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
       return ElegantDate(lastDay);
     },
-    daysAgo: function(val){ return daysNext(-val); },
-    daysNext: daysNext,
     monthsAgo: function(val){ return monthsNext(-val); },
     monthsNext: monthsNext,
     yearsAgo: function(val){ return yearsNext(-val); },
     yearsNext: yearsNext,
-    get yesterday(){ return daysNext(-1); },
-    get tomorrow(){ return daysNext(1); },
   }
 }
 

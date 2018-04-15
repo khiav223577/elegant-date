@@ -8,12 +8,17 @@ npm i elegant-date
 
 ## Usage
 
-### Wrap the date object first
+### Instantiate
 ```js
 import elegantDate from 'elegant-date'
-var now = elegantDate(new Date()) 
+
+var now = elegantDate()
 now.date
 // => Fri Apr 13 2018 18:54:32
+
+var now = elegantDate(new Date('2018/1/1')) 
+now.date
+// => Mon Jan 01 2018 00:00:00
 ```
 
 ### Add days
